@@ -5,12 +5,16 @@ import ImagePaths from './imagePaths';
 
 const ButtonHolders = () => {
 
+
     const buttons = ImagePaths.map((imagePath) => {
         return (
-            <Grid item xs={6} sm={6} md={6} lg={6} className="imageHolder">
-                <img src={imagePath.src} alt={imagePath.alt} title={imagePath.title} />
-            </Grid>)
-    });
+                <Grid item xs={6} sm={6} md={6} lg={6} className="imageHolder" 
+                onClick={()=>window.open(`https://${imagePath.alt}.monitus.org`, "_self")}
+                >
+                    <img src={imagePath.src} alt={imagePath.alt} title={imagePath.title} />
+                    <p>{imagePath.title}</p>
+                </Grid>
+            )});
 
     return (
         <div className="buttonHolders">
