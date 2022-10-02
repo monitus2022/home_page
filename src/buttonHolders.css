@@ -1,0 +1,15 @@
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.imageHolder {
+    padding: 20px 20px 20px 20px;
+}
+
+.buttonHolders {
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+}
+
